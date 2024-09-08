@@ -29,13 +29,13 @@ app.get("/data", async (req: Request, res: Response) => {
 })
 
 app.post("/data", async (req: Request, res: Response) => {
-    const {username, name} = req.body;
+    const {username, name, age, gender, description} = req.body;
     // console.log('req...', req.body)
     try {
         if (!username || !name) {
             return res.status(400).json({ error: 'Username and name are required' });
         }
-        const data = {username, name}
+        const data = {username, name, age, gender, description}
         const dt = await saveData(data)
         console.log('dtt', dt)
         return res.json({msg: "Data Added Successfully!"});
@@ -50,7 +50,7 @@ app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`)
 })
 
-async function saveData(turnIntoJsonData: {username:string, name: string}){
+async function saveData(turnIntoJsonData: {username:string, name: string, age: number, gender: string, description: string}){
     // const filePath = './data.json';
     // const filePath = path.join(__dirname, 'data.json');
     const filePath = path.join(process.cwd(), 'data.json');
