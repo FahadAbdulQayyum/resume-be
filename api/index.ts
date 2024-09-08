@@ -32,7 +32,8 @@ app.listen(PORT, () => {
 
 function saveData(turnIntoJsonData: string){
     // const filePath = './data.json';
-    const filePath = path.join(__dirname, 'data.json');
+    // const filePath = path.join(__dirname, 'data.json');
+    const filePath = path.join(process.cwd(), '../data.json');
 
     fss.writeFile(filePath, JSON.stringify(turnIntoJsonData), 'utf8', (e:any) => {
         if(e){
@@ -44,7 +45,8 @@ function saveData(turnIntoJsonData: string){
 }
 
 function readData(): Promise<any>{
-    const filePath = path.join(__dirname, 'data.json');
+    // const filePath = path.join(__dirname, 'data.json');
+    const filePath = path.join(process.cwd(), '../data.json');
     // const filePath = './data.json';
 
 
