@@ -46,7 +46,7 @@ function saveData(turnIntoJsonData: string){
 
 function readData(): Promise<any>{
     // const filePath = path.join(__dirname, 'data.json');
-    const filePath = path.join(process.cwd(), '../data.json');
+    const filePath = path.join(process.cwd(), 'data.json');
     // const filePath = './data.json';
 
 
