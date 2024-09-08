@@ -1,1 +1,16 @@
-[{"username":"fahad","name":"Fahad"},{"username":"fahadd","name":"Fahadd"},{"username":"fahaddd","name":"Fahaddd"},{"username":"fahaddd","name":"Fahaddd"},{"username":"fahaddd","name":"Fahaddd"},{"username":"letssee","name":"LetsGo"}]
+[
+    {    
+        "username":"fahad1998",
+        "name":"Fahad",
+        "gender":"male",
+        "age": 26,
+        "description":"Wow, You're great."
+    },
+    {    
+        "username":"fahad2000",
+        "name":"Fahaddy",
+        "gender":"male",
+        "age": 22,
+        "description":"Wow, Let's what happen!."
+    }
+]
